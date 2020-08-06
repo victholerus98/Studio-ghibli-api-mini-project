@@ -1,0 +1,67 @@
+:root {
+  --lavender: lavender;
+  --dark-purple: rgb(31, 7, 66);
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.page {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 500px;
+  height: 200px;
+}
+.card {
+  margin: 1rem;
+  border: 1px solid var(--lavender);
+  padding: 15px;
+  transition-duration: 0.4s;
+  background-color: var(--lavender);
+  color: rgb(49, 16, 100);
+}
+.card:hover {
+  transform: scale(1.2);
+  background-color: var(--lavender);
+  color: var(--dark-purple);
+  border: 1px solid var(--dark-purple);
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+/* ipad */
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 450px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .logo {
+    width: 350px;
+    height: 120px;
+  }
+}
